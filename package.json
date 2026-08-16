@@ -1,0 +1,25 @@
+{
+  "name": "lab-agent-workspace",
+  "version": "2.0.0",
+  "description": "科研课题组私域知识库智能协同 Agent 平台与 Obsidian 原生插件 (Local-First + LangGraph StateGraph + Multi-Strategy Hybrid RAG)",
+  "main": "src/plugin/main.js",
+  "scripts": {
+    "dev:plugin": "cd src/plugin && npm run dev",
+    "build:plugin": "cd src/plugin && npm run build",
+    "start:backend": "python -m uvicorn src.agent_service.main:app --reload --port 8000",
+    "test:eval": "python tests/test_engine_eval.py"
+  },
+  "keywords": [
+    "obsidian-plugin",
+    "langgraph",
+    "llamaindex",
+    "chromadb",
+    "rag",
+    "agentic-workflow",
+    "knowledge-graph",
+    "bm25",
+    "local-first"
+  ],
+  "author": "Research Group AI Lab",
+  "license": "MIT"
+}

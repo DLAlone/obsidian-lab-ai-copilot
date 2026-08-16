@@ -1,0 +1,10 @@
+{
+	"id": "lab-knowledge-agent",
+	"name": "Lab Knowledge AI Agent",
+	"version": "1.0.0",
+	"minAppVersion": "1.0.0",
+	"description": "课题组 AI 智能知识库随行助手与同步插件",
+	"author": "Lab Agent Team",
+	"authorUrl": "",
+	"isDesktopOnly": true
+}

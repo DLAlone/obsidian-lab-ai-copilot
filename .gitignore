@@ -1,0 +1,66 @@
+# ==============================================================================
+# Git Ignore Configuration - 课题组 Agent 智能协同平台
+# ==============================================================================
+
+# 1. 环境变量与敏感配置
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.token
+
+# 2. 数据库与本地持久化索引 (体积大/隐私数据)
+*.sqlite
+*.sqlite3
+*.db
+agent_memory.sqlite
+chroma_data/
+graph_data/
+
+# 3. Python 缓存与虚拟环境
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+ENV/
+env/
+dist/
+build/
+*.egg-info/
+
+# 4. Node.js 与前端构建产物
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-store/
+.nx/
+
+# 5. 临时调试与评测日志
+*.log
+test_*_output.txt
+*_res.json
+scratch/
+.system_generated/
+
+# 6. 系统与 IDE 文件
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# 7. 本地运行时数据与笔记存储目录 (Local Runtime Storage)
+shared_vault/
+src/agent_service/shared_vault/
+
+# 8. 归档与历史构建 (Archived Legacy)
+课题组知识协同平台/
+src/desktop_legacy/
